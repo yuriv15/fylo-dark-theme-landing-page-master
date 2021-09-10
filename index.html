@@ -18,26 +18,26 @@
 <div id="container">
   <body>
 
-    <header>
+    <header class="main-header">
       <div id="logo"><img src="./images/logo.svg" alt="Fylo logo"></div>
       <nav class="menu">
         <ul class="menu-items">
-          <li class="menu-item">Features</li>
-          <li class="menu-item">Team</li>
-          <li class="menu-item">Sign In</li>
+          <li class="menu-item"><a href="#">Features</a></li>
+          <li class="menu-item"><a href="#">Team</a></li>
+          <li class="menu-item"><a href="#">Sign In</a></li>
       </ul>
     </nav>
     </header>
 
     <main>
       <section class="intro-section">
-        <div><img src="./images/illustration-intro.png" alt="File organizing image"></div>
-        <h2>All your files in one secure location, accessible anywhere.</h2>
+        <div class="intro-image"><img src="./images/illustration-intro.png" alt="File organizing image"></div>
+        <h2 class="intro-h2">All your files in one secure location, accessible anywhere.</h2>
 
-        <p>Fylo stores all your most important files in one secure location. Access them wherever 
+        <p class="intro-p">Fylo stores all your most important files in one secure location. Access them wherever 
           you need, share and collaborate with friends family, and co-workers.</p>
 
-        <button>Get Started</button>
+        <button class="intro-btn">Get Started</button>
         
       </section>
 
@@ -78,6 +78,8 @@
       </section>
 
       <section class="productive-section">
+        <div><img src="images/illustration-stay-productive.png" alt="Stay Productive Illustration"></div>
+
         <h2>Stay productive, wherever you are</h2>
 
         <p>Never let location be an issue when accessing your files. Fylo has you covered for all of your file 
@@ -127,33 +129,53 @@
       </span>
       </section>
   </main>
+  <div class="early-access-div">
+    <h2>Get early access today</h2>
 
-    Get early access today
+    <p>It only takes a minute to sign up and our free starter tier is extremely generous. If you have any 
+      questions, our support team would be happy to help you.</p>
+      <input type="email" name="email" placeholder="example@email.com">
 
-    It only takes a minute to sign up and our free starter tier is extremely generous. If you have any 
-    questions, our support team would be happy to help you.
-
-    Get Started For Free
+    <button>Get Started For Free</button>
+  </div>
+    
 
   <footer class="main-footer">
+    <div id="logo-bottom"><img src="./images/logo.svg" alt="Fylo logo"></div>
 
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et 
-    dolore magna aliqua
+    <section class="location">
+    <i><img src="./images/icon-location.svg" alt="Location Icon"></i>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et 
+      dolore magna aliqua
+    </p>
+  </section>
 
-    +1-543-123-4567
-    example@fylo.com
+  <section class="contact">
+    <i><img src="./images/icon-phone.svg" alt="Phone Icon"></i>
+    <p>+1-543-123-4567</p>
+    <i><img src="./images/icon-email.svg" alt="Email Icon"></i>
+    <p>example@fylo.com</p>
+  </section>
 
-    About Us
-    Jobs
-    Press
-    Blog
+  <section class="links-1">
+    <ul>
+      <li>About Us</li>
+      <li>Jobs</li>
+      <li>Press</li>
+      <li>Blog</li>
+    </ul>
+  </section>
 
-    Contact Us
-    Terms
-    Privacy
+  <section class="links-2">
+    <ul>
+      <li>Contact Us</li>
+      <li>Terms</li>
+      <li>Privacy</li>
+    </ul>
+  </section>
 
   </footer>
-
     <div class="credits">
       <p class="attribution">
         Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
