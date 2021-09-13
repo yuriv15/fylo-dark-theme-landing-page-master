@@ -37,6 +37,10 @@ h5 {
     font-weight: 400;
 }
 
+ul{
+    list-style-type: none;
+}
+
 .main-header {
     width: 100vw;  
 }
@@ -285,8 +289,85 @@ h5 {
     position: relative;
 }
 
-#footer-container {
+#footer-container{
+    display: grid;
+    grid-template-areas: "logo logo logo logo logo"
+                         "location contact links1 links2 social";
+
+    grid-template-columns: 2.5fr 2fr 1fr 1fr 1fr;
     max-width: 1440px;
     margin: auto;
     padding: 0 40px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    row-gap: 25px;
+}
+
+.footer-link{
+    margin-bottom: 20px;
+    display: flex;
+}
+
+.footer-link > a{
+    text-decoration: none;
+    color: white;
+    margin-left: 20px;
+}
+
+#logo-bottom{
+    grid-area: logo;
+    padding-left: 11.5%;
+}
+
+.location{
+    grid-area: location;
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 35%;
+}
+
+.location > p{
+    margin-left: 20px;
+}
+
+.contact{
+    grid-area: contact;
+    display: flex;
+    justify-content:center;
+}
+
+.links-1{
+    grid-area: links1;
+    display: flex;
+}
+
+.links-2{
+    grid-area: links2;
+    display: flex;
+}
+
+.social-media{
+    grid-area: social;
+    display: flex;
+    padding-right: 70%;
+}
+
+.social-media ul{
+    display: flex;
+}
+
+.social-media ul li{
+    margin-left: 10px;
+}
+
+.social-media i{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
