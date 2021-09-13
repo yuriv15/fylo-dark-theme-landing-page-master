@@ -66,7 +66,12 @@ ul{
 
 .menu-item a {
     text-decoration: none;
-    color: inherit;
+    color: #999;
+}
+
+.menu-item a:hover {
+    color: #fff;
+    text-decoration: underline;
 }
 
 .main {
@@ -101,14 +106,17 @@ ul{
 
 .intro-btn {
     width: 200px;
-    height: 50px;
+    height: 45px;
     border-radius: 60px;
     color: white;
     background: hsl(198, 60%, 50%);
     border: none;
     margin-top: 25px;
     cursor: pointer;
+}
 
+.intro-btn:hover {
+    background-color: hsl(176, 68%, 64%);
 }
 
 .services-section {
@@ -138,7 +146,7 @@ ul{
 }
 
 .articles {
-    width: 65%;
+    width: 59%;
 }
 
 .articles > h3 {
@@ -188,6 +196,11 @@ ul{
     font-size: 0.9rem;
 }
 
+.productive-section-content a:hover {
+    color: #fff;
+    border-bottom: 1px solid #fff;
+}
+
 .customers-section {
     display: flex;
     justify-content: center;
@@ -197,7 +210,7 @@ ul{
 
 .customer {
     background-color: hsl(219, 30%, 18%);  
-    width: 30%; 
+    width: 25%; 
     margin-left: 3%;
     padding: 50px 25px 25px 25px;
     box-shadow: 8px 8px 8px hsl(217, 28%, 15%);
@@ -280,6 +293,11 @@ ul{
     margin-left: 25px;
     background-color: hsl(198, 60%, 50%);
     color: #fff;
+    cursor: pointer;
+}
+
+#input-div > button:hover {
+    background-color: hsl(176, 68%, 64%);
 }
 
 .main-footer {
@@ -291,16 +309,21 @@ ul{
 
 #footer-container{
     display: grid;
-    grid-template-areas: "logo logo logo logo logo"
-                         "location contact links1 links2 social";
+    grid-template-areas: ". logo logo logo logo logo ."
+                         ". location contact links1 links2 social .";
 
-    grid-template-columns: 2.5fr 2fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 3fr 4fr 2fr 2fr 1fr 1.5fr;
     max-width: 1440px;
     margin: auto;
     padding: 0 40px;
     font-family: "Open Sans", sans-serif;
     font-weight: 400;
     row-gap: 25px;
+    color: rgba(255, 255, 255, 0.753) ;
+}
+
+#footer-container a:hover {
+    color: #fff;
 }
 
 .footer-link{
@@ -310,20 +333,18 @@ ul{
 
 .footer-link > a{
     text-decoration: none;
-    color: white;
+    color: inherit;
     margin-left: 20px;
 }
 
 #logo-bottom{
     grid-area: logo;
-    padding-left: 11.5%;
 }
 
 .location{
     grid-area: location;
     display: flex;
     justify-content: flex-start;
-    padding-left: 35%;
 }
 
 .location > p{
@@ -349,7 +370,6 @@ ul{
 .social-media{
     grid-area: social;
     display: flex;
-    padding-right: 70%;
 }
 
 .social-media ul{
@@ -364,10 +384,18 @@ ul{
     width: 25px;
     height: 25px;
     border-radius: 50%;
-    border: 1px solid #fff;
-    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.753);
+    color: rgba(255, 255, 255, 0.753);
     display: flex;
     justify-content: center;
     align-items: center;
+}
 
+.social-media a {
+    text-decoration: none;
+}
+
+.social-media i:hover{
+    color: hsl(176, 68%, 64%);
+    border: 1px solid hsl(176, 68%, 64%);
 }
