@@ -19,7 +19,8 @@
     }
 
     .attribution a {
-      color: hsl(228, 45%, 44%);
+      color: #fff;
+      text-decoration: none;
     }
   </style>
   <link rel="stylesheet" href="./css/style.css">
@@ -184,10 +185,11 @@
         </p>
 
         <div id="input-div">
-          <span id="input-outline"><input type="email" name="email" placeholder="example@email.com"></span>
+          <span id="input-outline"><input id="email" type="email" name="email" placeholder="example@email.com"></span>
 
-          <button>Get Started For Free</button>
+          <button onclick="validarEmail()">Get Started For Free</button>
         </div>
+        <span id="error-email"></span>
 
       </div>
       <div id="footer-container">
@@ -241,9 +243,11 @@
     <div class="credits">
       <p class="attribution">
         Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-        Coded by <a href="#">Your Name Here</a>.
+        Coded by <a href="https://github.com/yuriv15">Yuri Gonçalves, &nbsp;</a><a href="https://github.com/paulodsneto">Paulo Neto and &nbsp;</a><a href="https://github.com/Diogonsc">Diogo Santos</a>.
       </p>
     </div>
+
+    <script src="./js/script.js"></script>
   </body>
 </div>
 

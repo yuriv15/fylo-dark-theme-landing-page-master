@@ -273,6 +273,8 @@ ul{
     position: absolute;
     top: -130px;
     left: 25%;
+    box-shadow: 8px 8px 8px hsl(215, 55%, 6%);
+    border-radius: 8px;
 }
 
 .early-access-div > h2 {
@@ -291,6 +293,7 @@ ul{
     display: flex;
     /* flex-wrap: wrap; */
     justify-content: center;
+    position: relative;
 }
 
 #input-outline {
@@ -321,6 +324,13 @@ ul{
 
 #input-div > button:hover {
     background-color: hsl(176, 68%, 64%);
+}
+
+#error-email {
+    color: hsl(0, 100%, 63%);
+    position: absolute;
+    bottom: 14px;
+    left: 103px;
 }
 
 .main-footer {
