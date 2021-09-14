@@ -333,6 +333,13 @@ ul{
     left: 103px;
 }
 
+#success-email {
+    color: hsl(120, 57%, 58%);
+    position: absolute;
+    bottom: 14px;
+    left: 103px;
+}
+
 .main-footer {
     width: 100vw;
     background-color: hsl(216, 53%, 9%);
