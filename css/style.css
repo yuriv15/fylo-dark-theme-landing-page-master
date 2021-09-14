@@ -439,3 +439,5 @@ ul{
     color: hsl(176, 68%, 64%);
     border: 1px solid hsl(176, 68%, 64%);
 }
+
+@import url('./mobile.css');
