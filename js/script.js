@@ -3,8 +3,10 @@ function validarEmail(){
     let error = document.querySelector('#error-email');
     let success = document.querySelector('#success-email');
     if(!email.checkValidity()){
+        success.innerHTML = ""
         error.innerHTML = "Please enter a valid email address"
     } else if (email.checkValidity()) {
         success.innerHTML = "Thank you! Sign up successful!"
+        error.innerHTML = ""
     }
   }
