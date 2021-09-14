@@ -19,6 +19,7 @@ body {
 
 p {
     font-family: "Open Sans", sans-serif;
+    opacity: 0.8;
 }
 
 h2 {
@@ -67,11 +68,12 @@ ul{
 
 .menu-item a {
     text-decoration: none;
-    color: #999;
+    color: #fff;
+    opacity: 0.8;
 }
 
 .menu-item a:hover {
-    color: #fff;
+    opacity: 1;
     text-decoration: underline;
 }
 
@@ -211,6 +213,7 @@ ul{
     width: fit-content;
     display: flex;
     align-items: center;
+    font-family: "Raleway", sans-serif;
     font-size: 0.9rem;
 }
 
@@ -441,8 +444,16 @@ ul{
 }
 
 @media only screen and (max-width: 1200px) {
+    * {
+        box-sizing: border-box;
+    }
+
     body {
         max-width: 100vw;
+    }
+
+    h5 {
+        opacity: 0.8;
     }
     
     .main-header {
@@ -464,7 +475,7 @@ ul{
     }
     
     #main-background1 {
-        padding: 0 20px;
+        padding: 0 40px;
         background-image: url('../images/bg-curvy-mobile.svg');
     }
     
@@ -478,7 +489,7 @@ ul{
     
     .intro-h2 {
         width: 100%;
-        font-size: 1.8rem;
+        font-size: 1.6rem;
         line-height: 2.5rem;
     }
     
@@ -492,7 +503,7 @@ ul{
     }
 
     #main-background2 {
-        padding: 0 20px 400px;
+        padding: 0 20px 350px;
     }
     
     .services-section {
@@ -505,6 +516,10 @@ ul{
     
     .articles {
         width: 100%;
+    }
+
+    .articles > p {
+        font-size: 1rem;
     }
     
     .productive-section {
@@ -530,6 +545,7 @@ ul{
 
      .productive-section-content > p {
         margin: 15px 0 0;
+        font-size: 1rem;
     }
 
     .productive-section-content a {
@@ -541,24 +557,30 @@ ul{
         max-width: 100%;
         flex-direction: column;
         justify-content: initial;
+        align-items: center;
         padding: 0;
         margin: 0;
+        background-position-x: 8%;
     }
     
     .customer {
-        width: 100%;
-        margin: 20px 0 0;
+        width: 90%;
+        margin: 40px 0 0;
         padding: 20px;
+    }
+
+    .customer > p {
+        font-size: 0.8rem;
     }
     
     .early-access-div {
         flex-direction: column;
         flex-wrap: nowrap;
         align-items: center;
-        width: 100%;
-        padding: 0;
+        width: 90%;
+        padding: 30px 20px 20px;
         top: -150px;
-        left: 0;
+        left: 5%;
     }
 
     .early-access-div > h2 {
@@ -567,11 +589,12 @@ ul{
 
     .early-access-div > p {
         width: 100%;
-        font-size: 0.9rem;
+        font-size: 1rem;
     }
 
     #input-outline {
         width: 100%;
+        margin-top: 10px;
     }
 
     #input-div {
@@ -580,18 +603,18 @@ ul{
         flex-direction: column;
     }
 
-    #input-outline > input {
-        width: 100%;
+    #input {
+        width: 80%;
     }
 
     #input-div > button {
         width: 100%;
         height: 50px;
-        margin: 0;
+        margin: 25px 0 20px;
     }
 
     .main-footer {
-        padding-top: 300px;
+        padding-top: 280px;
         padding-bottom: 50px;
     }
 
@@ -599,6 +622,11 @@ ul{
         max-width: 100%;
         display: flex;
         flex-direction: column;
+        font-size: 1rem;
+    }
+
+    .location {
+        margin-top: 20px;
     }
 
     #footer-container i {
@@ -606,7 +634,7 @@ ul{
         height: 15px;
     }
 
-    .footer-link > a{
+    .footer-link > a {
         margin-left: 0;
     }
 
@@ -624,6 +652,6 @@ ul{
     }
 
     .social-media i {
-        padding: 5px;
+        padding: 15px;
     }
 }
